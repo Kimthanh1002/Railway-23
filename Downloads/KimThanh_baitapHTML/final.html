@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Final Exam</title>
+    <link rel="stylesheet" href="final.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <script src="JQuery.js"></script>
+  </head>
+  <body onload="getGroup()" onmouseover="rowCol()">
+    <div id="khung">
+      <header>
+        <h1>A Web Page</h1>
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-right"></i>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-house-user"></i>
+        <input type="text" />
+        <i class="fas fa-search"></i>
+      </header>
+      <nav>
+        <img src="logo.jpg" alt="logo" />
+        <i class="fas fa-bars"></i>
+        <div>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-user-circle"></i>
+          <p>NAT</p>
+        </div>
+      </nav>
+      <section>
+        <div id="col_menu">
+          <ul>
+            <li class="tab-items" onclick="changeProductList(this)">
+              <i class="fas fa-home"></i>
+            </li>
+            <li class="tab-items" onclick="changeProductList(this)">
+              <i class="fas fa-user"></i>
+            </li>
+            <li class="tab-items active" onclick="changeProductList(this)">
+              <i class="fas fa-users"></i>
+            </li>
+            <li class="tab-items" onclick="changeProductList(this)">
+              <i class="fas fa-bars"></i>
+            </li>
+            <li class="tab-items" onclick="changeProductList(this)">
+              <i class="fas fa-sticky-note"></i>
+            </li>
+            <li class="tab-items" onclick="changeProductList(this)">
+              <i class="fas fa-question"></i>
+            </li>
+            <li id="null"></li>
+          </ul>
+        </div>
+        <div id="manage_group">
+          <div id=" table">
+            <h3>Manage Group</h3>
+            <i class="fas fa-users"></i>
+          </div>
+
+          <table id="table_main">
+            <tr>
+              <th id="th1">List Group</th>
+            </tr>
+            <tr>
+              <td>
+                <ul id="chuc_nang">
+                  <li>
+                    <label for="search"
+                      ><i id="icon_search" class="fas fa-search"></i
+                    ></label>
+                    <input id="search" type="text" placeholder="search group" />
+                  </li>
+                  <div id="right">
+                    <li><i id="openModal" class="fas fa-plus"></i></li>
+                    <li>
+                      <i onclick="getGroup()" class="fas fa-sync-alt"></i>
+                    </li>
+                    <li><i id="deleteModal" class="fas fa-trash-alt"></i></li>
+                  </div>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><div id="get"></div></td>
+            </tr>
+            <tr>
+              <td id="row_null"></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <footer></footer>
+    </div>
+    <div id="create_group">
+      <i id="close" class="fas fa-times"></i>
+      <div class="khungModal">
+        <h3>Create Group</h3>
+        <br /><br />
+        <span>Group Name:</span>
+        <input id="groupName" type="text" placeholder="group name" />
+        <br /><br />
+        <span>Member:</span>
+        <input id="member" type="text" placeholder="member" />
+        <br /><br />
+        <span>Creator:</span>
+        <input id="creator" type="text" placeholder="creator" />
+        <br /><br />
+        <span>Create Date:</span>
+        <input id="createDate" type="text" placeholder="create date" />
+        <br /><br />
+        <button onclick="createGroup()" onmouseout="getGroup()">
+          Create Group
+        </button>
+      </div>
+    </div>
+    <div id="modal"></div>
+    <div id="delete_group">
+      <i id="close1" class="fas fa-times"></i>
+      <div class="khungModal">
+        <h3>Delete Group</h3>
+        <br /><br />
+        <button onclick="deleteGroup()" onmouseout="getGroup()">
+          Delete Group
+        </button>
+      </div>
+    </div>
+    <div id="editModal">
+      <i id="close2" class="fas fa-times"></i>
+      <div class="khung_edit">
+        <h3 id="grName">Group Name</h3>
+        <i id="editIcon" class="far fa-edit"></i>
+      </div>
+        <p id="stt">STT</p>
+        <p id="mber">Member</p>
+        <p id="crtor">Creator</p>
+        <p id="crDate"></p>
+      </div>
+    </div>
+    <div id="editGrNameModal">
+      <i id="close3" class="fas fa-times"></i>
+      <div class="khungEditGr">
+        <span> Group Name</span>
+        <input id="nameInputed" type="text">
+        <br /><br />
+        <button onclick="editGroupName()" onmouseout="getGroup()">
+          Change Group Name
+        </button>
+
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>
