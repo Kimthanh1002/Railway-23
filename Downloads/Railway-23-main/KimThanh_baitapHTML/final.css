@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  margin-left: 10vw;
+  margin-top: 3vw;
+  padding: 0;
+}
+div h1 {
+  text-align: center;
+  top: 0;
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+header,
+nav,
+section,
+footer {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  border-bottom: 0px;
+}
+footer {
+  border-bottom: 2px solid black;
+}
+header {
+  background-color: rgb(90, 210, 214);
+  width: 80vw;
+  height: 5em;
+}
+nav {
+  width: 80vw;
+  height: 3em;
+}
+section {
+  width: 80vw;
+  height: 30em;
+}
+footer {
+  width: 80vw;
+  height: 3em;
+}
+header i {
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  width: 40px;
+}
+header input {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  width: 50vw;
+}
+nav img {
+  padding: 0.5px;
+  float: left;
+  width: 4.5em;
+  border-right: 2px solid black;
+}
+nav i {
+  margin: 15px 5px;
+}
+
+nav div,
+nav img,
+nav div p {
+  display: inline;
+}
+nav div {
+  float: right;
+  margin-top: 0;
+  margin-right: 15px;
+}
+
+#col_menu,
+#table {
+  margin: 0;
+}
+#col_menu ul {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+#col_menu ul li {
+  width: 4.6em;
+  height: 4.2em;
+  list-style-type: none;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#col_menu ul #null {
+  border-bottom: 0px;
+}
+#col_menu ul li i {
+  margin: 25px;
+}
+.active {
+  background: #ee4d2d;
+}
+#col_menu,
+#table {
+  float: left;
+}
+#manage_group {
+  margin: 0;
+  padding: 0;
+  height: 30em;
+  border: 2px solid whitesmoke;
+}
+section div {
+  padding: 0;
+  margin: 0;
+  margin-left: 10vw;
+}
+section div h3,
+section div i {
+  float: left;
+}
+section div i {
+  margin-top: 0.3em;
+  margin-left: 2px;
+}
+#div_h3 {
+  margin: 0;
+  padding: 0;
+}
+#list_group {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0px;
+  width: 65vw;
+}
+#chuc_nang {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid black;
+  width: 65vw;
+  height: 4vw;
+  border-bottom: 2px solid black;
+}
+#chuc_nang li {
+  display: inline;
+  list-style-type: none;
+}
+#search,
+#chuc_nang li {
+  float: left;
+}
+#search {
+  margin: 0;
+  padding: 1px;
+  border: 2px solid black;
+  border-left: 0;
+  display: inline-flex;
+}
+#icon_search {
+  margin: 0;
+  margin-top: 12.6px;
+  padding: 1px;
+  border: 2px solid black;
+  border-right: 0;
+}
+
+#search,#chuc_nang li i#icon_search{
+  margin-top: 10px;
+  height: 20px;
+} 
+#chuc_nang li i {
+  margin-top: 0.8em;
+  margin-left: 0.5em;
+}
+#right {
+  float: right;
+  margin-right: 15px;
+}
+#get {
+  position: relative;
+  margin: 0;
+  width: 65vw;
+  height: 20em;
+  overflow-y: auto;
+}
+table,
+td,
+th {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  text-align: center;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+table {
+  width: 65vw;
+  border-collapse: collapse;
+}
+#get th {
+  padding: 5px;
+  background-color: rgb(146, 141, 141);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+ul #chuc_nang {
+  margin: 0;
+}
+
+#table_main {
+  border: 2px solid black;
+  margin-left: 5em;
+}
+#row_null {
+  height: 2em;
+  border-top: 2px solid black;
+}
+#modal {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+#create_group,#delete_group,#editModal,#editGrNameModal {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  background-color: rgb(212, 203, 188);
+  width: 40vw;
+  height: 30vw;
+  margin-left: 30%;
+  z-index: 3;
+  margin-top: 15em;
+  display: none;
+}
+#close,#close1,#close2,#close3 {
+  color: #9e8989;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#close:hover, #close:focus,
+#close1:hover, #close1:focus,
+#close2:hover,#close2:focus,
+#close3:hover,#close3:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.khungModal{
+ 
+  margin-left: 0.5em;
+  margin-top: 2em;
+  height: 30vw;
+  margin: 4em;
+}
+.khungModal span{
+  float: left;
+}
+.khungModal input{
+  float: right;
+  width: 20vw;
+}
+.khungModal button,.khungEditGr button{
+  padding: 5px;
+  background-color: rgb(136, 182, 90,0.7);
+  }
+  .row:hover,.row:focus{
+    border: 2px solid rgb(85, 172, 230,.7)
+  }
+  #editModal .khung_edit {
+  margin-left: 0.5em;
+  margin-top: 2em;
+  height: 3em;
+  margin: 2em;
+  }
+  #editModal .khung_edit h3{
+    float: left;
+    margin-left: 3em;
+
+  }
+  #editModal .khung_edit i{
+    float: right;
+    margin-right: 3em;
+    padding: 1px;
+    background-color: rgba(134, 214, 6, 0.5);
+    border-right: 2px solid rgba(221, 115, 16, 0.7);
+    border-bottom: 2px solid rgba(221, 115, 16, 0.7);
+    border-top: 2px solid cornsilk;
+    border-left: 2px solid cornsilk;
+
+  }
+  #editModal p{
+    margin-left: 1em;
+    text-align: left;
+  }
+  .khungEditGr{
+    margin: 0;
+    margin-top: 2em;
+
+  }
+  .khungEditGr span,.khungEditGr input{
+    text-align: left;
+    margin-top: 2em;
+  }
+
+
+
+
